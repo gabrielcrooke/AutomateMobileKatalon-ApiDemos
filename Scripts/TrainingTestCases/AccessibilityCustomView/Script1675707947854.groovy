@@ -19,32 +19,21 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('/Users/gabrielcrooke/Desktop/APK/APIDemos.apk', true)
 
-Mobile.tap(findTestObject('AccessibilityService/Accessibility1'), 0)
+Mobile.tap(findTestObject('AccessibilityCustomView/CustomView'), 0)
 
-Mobile.tap(findTestObject('AccessibilityService/AccessibilityService'), 0)
+Mobile.verifyMatch('Accessibility/Custom View', 'Accessibility/Custom View', false)
 
-Mobile.verifyMatch('Accessibility/Accessibility Service', 'Accessibility/Accessibility Service', false)
+Mobile.doubleTap(findTestObject('AccessibilityCustomView/Box1'), 0)
 
-Mobile.tap(findTestObject('AccessibilityService/BtnConfiguration'), 0)
+Mobile.doubleTap(findTestObject('AccessibilityCustomView/Box2'), 0)
 
-Mobile.scrollToText('Audio balance', FailureHandling.STOP_ON_FAILURE) 
-
-Mobile.scrollToText('Font size', FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('AccessibilityService/FontSizeOption'), 0)
-
-Mobile.tap(findTestObject('AccessibilityService/LastLevelFont'), 0)
-
-Mobile.tap(findTestObject('AccessibilityService/SecondLevelFont'), 0)
-
-	for (x=1; x<=4; x++) {
+	for (x=1; x<=3; x++) {
 		
 		Mobile.pressBack()
 		
 	}
 	
-Mobile.delay(3)
-
+Mobile.delay(2)
+	
 Mobile.closeApplication()
-
 
