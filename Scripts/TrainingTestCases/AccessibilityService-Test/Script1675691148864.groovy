@@ -19,37 +19,34 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startApplication('/Users/gabrielcrooke/Desktop/APK/APIDemos.apk', true)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/Accessibility1'), 0)
+Mobile.tap(findTestObject('AccessibilityService/Accessibility1'), 0)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/AccessibilityNodeQuerying'), 0)
+Mobile.tap(findTestObject('AccessibilityService/AccessibilityService'), 0)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/DoLaundryCheckBox'), 0)
+Mobile.verifyMatch('Accessibility/Accessibility Service', 'Accessibility/Accessibility Service', false)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/TakeOutTrashCheckBox'), 0)
+Mobile.tap(findTestObject('AccessibilityService/BtnConfiguration'), 0)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/NapCheckBox'), 0)
+Mobile.scrollToText('Audio balance', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/DoTaxesCheckBoxOk'), 0)
+not_run: Mobile.swipe(0, 3, 0, 0)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/TakeOutTrashCheckBox'), 0)
+Mobile.scrollToText('Font size', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/TeaWithAuntSharonCheckBoxOk'), 0)
+Mobile.tap(findTestObject('AccessibilityService/FontSizeOption'), 0)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/SettingBtn'), 0)
+Mobile.tap(findTestObject('AccessibilityService/LastLevelFont'), 0)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/ColorTheme'), 0)
+Mobile.tap(findTestObject('AccessibilityService/SecondLevelFont'), 0)
 
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/ClockBack'), 0)
-
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/ActivateUseClockBack'), 0)
-
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/DenyClockBack'), 0)
-
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/BackClockback'), 0)
-
-Mobile.tap(findTestObject('AccessibilityNodeQuerying/BackClockback'), 0)
-
-Mobile.pressBack()
+	for (x=1; x<=4; x++) {
+		
+		Mobile.pressBack()
+		
+	}
+	
+Mobile.delay(3)
 
 Mobile.closeApplication()
+
 
