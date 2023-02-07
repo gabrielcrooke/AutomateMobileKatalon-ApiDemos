@@ -23,9 +23,12 @@ Mobile.tap(findTestObject('BouncingBalls/AnimationOption'), 0)
 
 Mobile.tap(findTestObject('BouncingBalls/BouncingBalls'), 0)
 
-	for (x=1; x<=15; x++) {
-	
-		Mobile.tap(findTestObject('BouncingBalls/BodyColor'), 5)
-	
+	for (x = 1; x <= 11; x++) {
+		
+	    Mobile.tap(findTestObject('BouncingBalls/BodyColor'), 5)
+		Mobile.swipe(100, 400, 400, 100)
+		
 	}
+
+
 
