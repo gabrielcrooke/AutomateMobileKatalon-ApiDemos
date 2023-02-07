@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>AccessibilityCustomView</name>
+   <name>AccessibilityCustomView-Test</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>0d56dce6-a4a0-4c90-a590-008c5aa9ba19</testCaseGuid>
