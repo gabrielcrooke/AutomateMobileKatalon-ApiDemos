@@ -23,6 +23,7 @@ Mobile.tap(findTestObject('BouncingBalls/AnimationOption'), 0)
 
 Mobile.tap(findTestObject('CustomEvaluator/CustomEvaluator'), 0)
 
+
 Mobile.verifyElementVisible(findTestObject('CustomEvaluator/titleViewcustomEvaluator'), 0)
 
 Mobile.tap(findTestObject('CustomEvaluator/btnPlay'), 0)
