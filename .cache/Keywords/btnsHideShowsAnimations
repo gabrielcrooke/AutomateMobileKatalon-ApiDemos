@@ -1,0 +1,16 @@
+{
+  "keywordFileContentHash": "2061EA88B5864C9451B115543802FEE2",
+  "keywordClasses": [
+    {
+      "name": "btnsHideShowsAnimations",
+      "keywordMethods": [
+        {
+          "name": "tapBtnsHideShowAnimations",
+          "parameters": [],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
