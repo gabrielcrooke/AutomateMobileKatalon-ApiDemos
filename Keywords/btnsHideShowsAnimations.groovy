@@ -38,15 +38,14 @@ import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 
 public class btnsHideShowsAnimations {
-	
+
 	@Keyword
 	public static void tapBtnsHideShowAnimations() {
-		
+
 		MobileElementCommonHelper.tapAndHold(findTestObject('Object Repository/HideShowAnimations/btn1'), 0, 2)
 		MobileElementCommonHelper.tapAndHold(findTestObject('Object Repository/HideShowAnimations/btn2'), 0, 2)
 		MobileElementCommonHelper.tapAndHold(findTestObject('Object Repository/HideShowAnimations/btn3'), 0, 2)
 		MobileElementCommonHelper.tapAndHold(findTestObject('Object Repository/HideShowAnimations/btn4'), 0, 2)
 		MobileElementCommonHelper.tapAndHold(findTestObject('Object Repository/HideShowAnimations/btnShowButtons'), 0, 2)
-		
 	}
 }
