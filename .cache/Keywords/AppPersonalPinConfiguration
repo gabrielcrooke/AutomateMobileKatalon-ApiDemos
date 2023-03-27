@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "B44BC7B3E429ABEE36A61BAAD7E6CE88",
+  "keywordClasses": [
+    {
+      "name": "AppPersonalPinConfiguration",
+      "keywordMethods": [
+        {
+          "name": "PinConfiguration",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

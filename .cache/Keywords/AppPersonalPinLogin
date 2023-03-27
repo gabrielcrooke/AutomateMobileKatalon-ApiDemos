@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "93AFD021C23C96CDFBCE53D27510DC57",
+  "keywordClasses": [
+    {
+      "name": "AppPersonalPinLogin",
+      "keywordMethods": [
+        {
+          "name": "PinLogin",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

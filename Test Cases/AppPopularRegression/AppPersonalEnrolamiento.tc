@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>AppPersonalEnrolamiento</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d2ebb7ab-128c-4e98-a55e-ab6426345398</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3f61e9c1-9810-4f68-92ce-35e9fb72f623</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f9e8572-6726-47f3-b8f2-5043429d342a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'migueldisla28'</defaultValue>
+      <description></description>
+      <id>3f61e9c1-9810-4f68-92ce-35e9fb72f623</id>
+      <masked>false</masked>
+      <name>user</name>
+   </variable>
+   <variable>
+      <defaultValue>'321321'</defaultValue>
+      <description></description>
+      <id>9f9e8572-6726-47f3-b8f2-5043429d342a</id>
+      <masked>false</masked>
+      <name>pass</name>
+   </variable>
+</TestCaseEntity>

@@ -32,3 +32,13 @@ def static "trest.getCurrentSessionMobileDriver"() {
 def static "btnsHideShowsAnimations.tapBtnsHideShowAnimations"() {
     (new btnsHideShowsAnimations()).tapBtnsHideShowAnimations()
 }
+
+
+def static "AppPersonalPinConfiguration.PinConfiguration"() {
+    (new AppPersonalPinConfiguration()).PinConfiguration()
+}
+
+
+def static "AppPersonalPinLogin.PinLogin"() {
+    (new AppPersonalPinLogin()).PinLogin()
+}
