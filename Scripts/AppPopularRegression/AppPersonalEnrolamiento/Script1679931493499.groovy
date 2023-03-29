@@ -21,6 +21,17 @@ Mobile.startApplication('/Users/gabrielcrooke/Desktop/APK/SSC_BPDContainer-armea
 
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.TextView - Acceso Clientes'), 0)
 
+popupAcceso = Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.Button - ContinuarPopup'), 
+    20)
+
+
+if (popupAcceso == true) {
+	
+	print('Error al intentar enrrolar el usuario, posible tu requerimiento....')
+	Mobile.closeApplication()
+	
+} else {
+
 Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Usuario'), 120)
 
 Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Usuario'), user)
@@ -29,11 +40,15 @@ Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText 
 
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.Button - Acceder'), 0)
 
-Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), 120)
+txtToken = Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), 30)
+
+if (txtToken == true) {
 
 Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), '321321')
 
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.Button - Continuar'), 0)
+
+} else {
 
 Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.PinConf1'), 120)
 
@@ -55,12 +70,11 @@ btnSalir = Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/
 
 print(btnSalir)
 
-	if (btnSalir == true) {
-		print('Enrolamiento exitoso')
-		
-	} else {
-		print('Enrolamiento no satisfactorio')
-	}
-	
+if (btnSalir == true) {
+    print('Enrolamiento exitoso')
+} else {
+    print('Enrolamiento no satisfactorio')
+}
 
-
+}
+}
