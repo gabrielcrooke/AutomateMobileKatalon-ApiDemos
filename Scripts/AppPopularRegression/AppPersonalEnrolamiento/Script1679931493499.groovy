@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startApplication('/Users/gabrielcrooke/Desktop/APK/SSC_BPDContainer-armeabi-v7a-QA.apk', true)
+Mobile.startApplication('C:\\Users\\Dell\\Desktop\\APK\\SSC_BPDContainer-armeabi-v7a-QA.apk', true)
 
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.TextView - Acceso Clientes'), 0)
 
@@ -39,6 +39,13 @@ Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText 
 Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Contrasea'), pass)
 
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.Button - Acceder'), 0)
+
+LoginPopUp = Mobile.waitForElementPresent(findTestObject('Object Repository/AppPersonalEnrolamiento/LoginPopUpTuRequerimiento'), 60)
+
+if (LoginPopUp == true) {
+	print('Error al intentar enrrolar el usuario, posible tu requerimiento....')
+	Mobile.closeApplication()
+} else {
 
 txtToken = Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), 30)
 
@@ -74,7 +81,8 @@ if (btnSalir == true) {
     print('Enrolamiento exitoso')
 } else {
     print('Enrolamiento no satisfactorio')
-}
+	}
 
-}
-}
+		}
+			}
+				}

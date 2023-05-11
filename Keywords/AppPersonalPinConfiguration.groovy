@@ -37,11 +37,11 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webui.exception.WebElementNotFoundException
 
 class AppPersonalPinConfiguration {
-	
+
 	@Keyword
 	public static void PinConfiguration() {
 
-		
+
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinConf1'), '1')
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinConf2'), '1')
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinConf3'), '1')
@@ -50,8 +50,5 @@ class AppPersonalPinConfiguration {
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinConf6'), '1')
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinConf7'), '1')
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinConf8'), '1')
-		
-		
 	}
-
 }

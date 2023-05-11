@@ -46,6 +46,5 @@ class AppPersonalPinLogin {
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinLogin2'), '1')
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinLogin3'), '1')
 		MobileBuiltInKeywords.sendKeys(findTestObject('Object Repository/AppPersonalEnrolamiento/android.widget.PinLogin4'), '1')
-		
 	}
 }
