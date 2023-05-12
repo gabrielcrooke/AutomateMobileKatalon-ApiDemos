@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.BurgerMenu'), 0)
 
@@ -23,6 +24,17 @@ Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Te
 
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Cuentas de terceros'), 0)
 
+
+
+if (Mobile.waitForElementPresent(findTestObject('Object Repository/PgosCuentasTercerosACuentasAhorroRD/PopUpTuRequerimientoCtaTerceros'), 30, FailureHandling.CONTINUE_ON_FAILURE)) {
+	
+	print("Posible....Tu requerimiento")
+	Mobile.tap(findTestObject('Object Repository/PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - CONTINUARPopUp'), 0, )
+	KeywordUtil.markFailed("Pago a terceros Option is failing")
+	
+	
+} else {
+	
 Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.DesdeCuenta'), 20)
 
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.DesdeCuenta'), 0)
@@ -73,5 +85,6 @@ if (pagoSuccess == true) {
 	print("El pago no pudo ser realizado")
 	Mobile.closeApplication()
 }
+	}
 
 
