@@ -1,0 +1,15 @@
+{
+  "keywordFileContentHash": "704B99463D851B6499DA7D8719590579",
+  "keywordClasses": [
+    {
+      "name": "AppPersonalBacktoDash",
+      "keywordMethods": [
+        {
+          "name": "BacktoDash",
+          "parameters": []
+        }
+      ]
+    }
+  ],
+  "javadocParsed": false
+}

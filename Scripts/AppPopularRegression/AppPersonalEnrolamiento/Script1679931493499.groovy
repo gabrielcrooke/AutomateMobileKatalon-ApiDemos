@@ -16,63 +16,47 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.kms.katalon.core.util.KeywordUtil
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 
 Mobile.startApplication('C:\\Users\\Dell\\Desktop\\APK\\SSC_BPDContainer-armeabi-v7a-QA.apk', true)
 
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.TextView - Acceso Clientes'), 0)
 
-popupAcceso = Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.Button - ContinuarPopup'), 
-    20)
-
-
-if (popupAcceso == true) {
+if (Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.Button - ContinuarPopup'), 
+    20, FailureHandling.CONTINUE_ON_FAILURE)) {
 	
 	print('Error al intentar enrrolar el usuario, posible tu requerimiento....')
-	Mobile.closeApplication()
+	KeywordUtil.markFailedAndStop("Error al pulsar el primer boton acceder")
 	
 } else {
 
 Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Usuario'), 120)
-
 Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Usuario'), user)
-
 Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Contrasea'), pass)
-
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.Button - Acceder'), 0)
 
-LoginPopUp = Mobile.waitForElementPresent(findTestObject('Object Repository/AppPersonalEnrolamiento/LoginPopUpTuRequerimiento'), 60)
-
-if (LoginPopUp == true) {
+if (Mobile.waitForElementPresent(findTestObject('Object Repository/AppPersonalEnrolamiento/LoginPopUpTuRequerimiento'), 60, FailureHandling.CONTINUE_ON_FAILURE)) {
 	print('Error al intentar enrrolar el usuario, posible tu requerimiento....')
+	KeywordUtil.markFailedAndStop("Error al pulsar el boton acceder luego de colocar credenciales")
 	Mobile.closeApplication()
+	
 } else {
 
-txtToken = Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), 30)
-
-if (txtToken == true) {
+if (Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), 30, FailureHandling.CONTINUE_ON_FAILURE)) {
 
 Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), '321321')
-
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.Button - Continuar'), 0)
 
 } else {
 
 Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.PinConf1'), 120)
-
 CustomKeywords.'AppPersonalPinConfiguration.PinConfiguration'()
-
 Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.Button - Cancelar'), 120)
-
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.Button - Cancelar'), 0)
-
 Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.TextView - Lo har luego'), 120)
-
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.TextView - Lo har luego'), 0)
-
 Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.PinLogin'), 120)
-
 CustomKeywords.'AppPersonalPinLogin.PinLogin'()
 
 btnSalir = Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.Salir'), 120)

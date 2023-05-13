@@ -42,3 +42,8 @@ def static "AppPersonalPinConfiguration.PinConfiguration"() {
 def static "AppPersonalPinLogin.PinLogin"() {
     (new AppPersonalPinLogin()).PinLogin()
 }
+
+
+def static "AppPersonalBacktoDash.BacktoDash"() {
+    (new AppPersonalBacktoDash()).BacktoDash()
+}

@@ -37,4 +37,11 @@
       <testCaseId>Test Cases/AppPopularRegression/PgosCuentasTercerosACuentasAhorroRD</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
    </testCaseLink>
+   <testCaseLink>
+      <guid>34d8f1a1-2d9e-4f40-bfdc-9faccd29ddd6</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/AppPopularRegression/PagoTCpropia</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
 </TestSuiteEntity>

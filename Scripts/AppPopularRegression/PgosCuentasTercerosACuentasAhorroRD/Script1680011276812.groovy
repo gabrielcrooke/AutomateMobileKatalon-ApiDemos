@@ -29,48 +29,27 @@ Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Te
 if (Mobile.waitForElementPresent(findTestObject('Object Repository/PgosCuentasTercerosACuentasAhorroRD/PopUpTuRequerimientoCtaTerceros'), 30, FailureHandling.CONTINUE_ON_FAILURE)) {
 	
 	print("Posible....Tu requerimiento")
-	Mobile.tap(findTestObject('Object Repository/PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - CONTINUARPopUp'), 0, )
 	KeywordUtil.markFailed("Pago a terceros Option is failing")
-	
+	Mobile.tap(findTestObject('Object Repository/PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - CONTINUARPopUp'), 0, )
+	CustomKeywords.'AppPersonalBacktoDash.BacktoDash'()
 	
 } else {
 	
 Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.DesdeCuenta'), 20)
-
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.DesdeCuenta'), 0)
-
-Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Nomina  786433300'), 
-    20)
-
+Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Nomina  786433300'), 20)
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Nomina  786433300'), 0)
-
-Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - CuentadeTercero'), 
-    3)
-
+Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - CuentadeTercero'), 3)
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - CuentadeTercero'), 0)
-
-Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - SR HECTOR J GASPAR SOTO  760309914'), 
-    3)
-
+Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - SR HECTOR J GASPAR SOTO  760309914'), 3)
 Mobile.scrollToText('SR JEAN C DURAN MOYA / 798404174', FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - SR HECTOR J GASPAR SOTO  760309914'), 
-    0)
-
+Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - SR HECTOR J GASPAR SOTO  760309914'), 0)
 Mobile.sendKeys(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.EditText - MontoaPagar'), '10')
-
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarPago'), 0)
-
-Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarConfirmacion'), 
-    0)
-
+Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarConfirmacion'), 0)
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarConfirmacion'), 0)
-
-Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.EditText - DigitaToken'), 
-    0)
-
+Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.EditText - DigitaToken'), 0)
 Mobile.sendKeys(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.EditText - DigitaToken'), '321321')
-
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarToken'), 0)
 
 pagoSuccess = Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Tu pago ha sido realizado'), 
