@@ -37,19 +37,19 @@ if (Mobile.waitForElementPresent(findTestObject('Object Repository/PgosCuentasTe
 	
 Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.DesdeCuenta'), 20)
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.DesdeCuenta'), 0)
-Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Nomina  786433300'), 20)
+Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Nomina  account1'), 20)
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Nomina  786433300'), 0)
 Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - CuentadeTercero'), 3)
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - CuentadeTercero'), 0)
-Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - SR HECTOR J GASPAR SOTO  760309914'), 3)
+Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView account2'), 3)
 Mobile.scrollToText('SR JEAN C DURAN MOYA / 798404174', FailureHandling.STOP_ON_FAILURE)
-Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - SR HECTOR J GASPAR SOTO  760309914'), 0)
+Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView -  account 2'), 0)
 Mobile.sendKeys(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.EditText - MontoaPagar'), '10')
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarPago'), 0)
 Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarConfirmacion'), 0)
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarConfirmacion'), 0)
 Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.EditText - DigitaToken'), 0)
-Mobile.sendKeys(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.EditText - DigitaToken'), '321321')
+Mobile.sendKeys(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.EditText - DigitaToken'), 'tokenconf')
 Mobile.tap(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.Button - btnContinuarToken'), 0)
 
 pagoSuccess = Mobile.waitForElementPresent(findTestObject('PgosCuentasTercerosACuentasAhorroRD/android.widget.TextView - Tu pago ha sido realizado'), 
