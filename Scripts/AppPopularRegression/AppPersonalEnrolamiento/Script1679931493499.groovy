@@ -45,7 +45,7 @@ if (Mobile.waitForElementPresent(findTestObject('Object Repository/AppPersonalEn
 
 if (Mobile.waitForElementPresent(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), 30, FailureHandling.CONTINUE_ON_FAILURE)) {
 
-Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), '321321')
+Mobile.sendKeys(findTestObject('AppPersonalEnrolamiento/android.widget.EditText - Digita el cdigo'), codepass)
 Mobile.tap(findTestObject('AppPersonalEnrolamiento/android.widget.Button - Continuar'), 0)
 
 } else {
