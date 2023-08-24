@@ -32,9 +32,9 @@ Mobile.waitForElementPresent(findTestObject('PagoTCpropia/android.widget.Relativ
 
 Mobile.tap(findTestObject('PagoTCpropia/android.widget.RelativeLayout-DesdeCuenta'), 0)
 
-Mobile.waitForElementPresent(findTestObject('PagoTCpropia/android.widget.TextView - Personal  794912725'), 20)
+Mobile.waitForElementPresent(findTestObject('PagoTCpropia/android.widget.TextView - Personal  account'), 20)
 
-Mobile.tap(findTestObject('PagoTCpropia/android.widget.TextView - Personal  794912725'), 0)
+Mobile.tap(findTestObject('PagoTCpropia/android.widget.TextView - Personal  account'), 0)
 
 Mobile.waitForElementPresent(findTestObject('PagoTCpropia/android.widget.ImageView-TarjetaCredito'), 20)
 
