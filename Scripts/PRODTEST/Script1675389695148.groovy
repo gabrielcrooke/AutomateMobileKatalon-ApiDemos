@@ -23,9 +23,9 @@ Mobile.tap(findTestObject('Object Repository/PRODAPK/android.widget.TextView - A
 
 Mobile.switchToPortrait()
 
-Mobile.setText(findTestObject('Object Repository/PRODAPK/android.widget.EditText - Usuario'), 'gcrooke02', 0)
+Mobile.setText(findTestObject('Object Repository/PRODAPK/android.widget.EditText - Usuario'), 'user', 0)
 
-Mobile.setText(findTestObject('Object Repository/PRODAPK/android.widget.EditText - Contrasea'), 'clara0213', 0)
+Mobile.setText(findTestObject('Object Repository/PRODAPK/android.widget.EditText - Contrasea'), 'pass', 0)
 
 Mobile.tap(findTestObject('Object Repository/PRODAPK/android.widget.Button - Acceder'), 0)
 
